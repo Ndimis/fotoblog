@@ -13,4 +13,4 @@ class User(AbstractUser):
     )
 
     profile_photo = models.ImageField()
-    role = models.CharField(max_length=30, choices=ROLE_CHOICES)
+    role = models.CharField(max_length=30, choices=ROLE_CHOICES, verbose_name='Rôle')
