@@ -36,4 +36,5 @@ urlpatterns = [
     path('password_change', PasswordChangeView.as_view(success_url='password_change_done'), name='password_change'),
     path('password_change_done', PasswordChangeDoneView.as_view(template_name='blog/home.html'), name='password_change_done'),
     path('home', blog.views.home, name='home'),
+    path('signup', authentication.views.signup_page, name='signup'),
 ]
